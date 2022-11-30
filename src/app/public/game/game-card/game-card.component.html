@@ -1,0 +1,54 @@
+<!-- PROFILE CARD -->
+<div class="card" *ngFor="let game of games">
+    <mat-card class="game">
+   
+        <section class="content">
+            <img src="{{'https://cdn.cloudflare.steamstatic.com/steam/apps/'+game.appid+'/library_600x900.jpg'}}" alt="" class="game-i">
+            <mat-card-content>
+                <mat-card-title>
+                    <h2>
+                        {{game.name}}
+                    </h2>
+                </mat-card-title>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    A assumenda voluptas iste ut incidunt consequuntur, temporibus accusamus, 
+                    modi quis eligendi aut ex optio dolores deleniti earum repellat obcaecati! Nostrum, id.
+                </p>
+            </mat-card-content>
+        </section>
+
+        <div>
+            <button mat-raised-button color="#000">share</button>
+            <button mat-flat-button color="primary">Add to list</button>
+            <mat-icon aria-hidden="false" aria-label="share icon" fontIcon="share"></mat-icon>
+        </div>
+
+    </mat-card>
+</div>
+
+<!-- SELECT CARD -->
+<div class="card" *ngFor="let game of games">
+    <mat-card class="game">
+        <section class="content">
+            <img src="{{'https://cdn.cloudflare.steamstatic.com/steam/apps/'+game.appid+'/header.jpg'}}" alt="" class="game-i-mini">
+            <mat-card-content>
+                <mat-card-title>
+                    <h2>
+                        {{game.name}}
+                    </h2>
+                </mat-card-title>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </p>
+            </mat-card-content>
+        </section>
+        
+        <div>
+            <button mat-raised-button color="#000">share</button>
+            <button mat-flat-button color="primary" (click)="getSingleGame('1938090')">Add to list</button>
+            <mat-icon aria-hidden="false" aria-label="share icon" fontIcon="share"></mat-icon>
+        </div>
+
+    </mat-card>
+</div>

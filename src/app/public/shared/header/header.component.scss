@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@500&display=swap');
+
+mat-toolbar {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 2px 2px 20px -1px rgba(0 0 0.7) ;
+    height: 50px;
+
+}
+
+.header{
+    background-color: #2d343c;
+}
+
+.logo-name { 
+    color: #9ca4a1;
+    font-family: 'Anek Devanagari', sans-serif;
+    font-size: 1.1em;
+}
+
+.content {
+    width: 100vw;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@500&display=swap');
+
+$section-background: "#2d343c";
+$transition-time: 0.7s;
+
+a {
+    color: #f5bf18;
+}
+
+a:visited{
+    color:#9ca4a1;
+}
+
+a:hover{
+
+}
+
+section { 
+    width: 480px;
+    height: 600px;
+    background-color: #{$section-background};
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 75px;
+    border-radius: 9px;
+    box-shadow: 5px 4px 20px 1px rgba(0, 0, 0, 0.7);
+    transition: #{$transition-time};
+}
+
+section:hover {
+    transition: #{$transition-time};
+    box-shadow: 5px 4px 20px 4px rgba(0, 0, 0, 0.7);
+}
+
+.login-text-area {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: 90px;
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: baseline;
+}
+
+.login-icon {
+    color: #9ca4a1;
+    font-weight: bolder;
+    font-size: 2em;
+    margin-right: 5px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-text {
+    font-family: 'Anek Devanagari', sans-serif;
+    color: #9ca4a1;
+    font-weight: 500;
+    font-size: 3.5em;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+mat-form-field {
+    width: 300px;
+}
+
+.send-button {
+    width: 300px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.under-button {
+    color: #9ca4a1;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 90px;
+    margin-top: -20px;  
+    font-size: 0.9em;
+}
+
+.steam-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#9ca4a1;
+    margin-top: 10px;
+    width: auto;
+}
+
+.steam-btn {
+    display: flex;
+}

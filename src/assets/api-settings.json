@@ -1,0 +1,9 @@
+{
+    "apiUrl": "https://api.steampowered.com/",
+    "comunityService": "ICommunityService/",
+    "steamApps": "ISteamApps/", 
+    "player": "IPlayerService/",
+    "user": "ISteamUser/",
+    "userStats": "ISteamUserStats/"
+}
+  
