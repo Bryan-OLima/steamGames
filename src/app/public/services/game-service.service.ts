@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import Settings from 'src/assets/api-settings.json'
+import { AppList, GamesList } from '../dtos/game.type';
 
 @Injectable({
   providedIn: 'root'

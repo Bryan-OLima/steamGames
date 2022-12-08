@@ -11,6 +11,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { HttpClientModule } from '@angular/common/http';
+import { MatDividerModule } from '@angular/material/divider';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -22,6 +23,8 @@ import { LoginComponent } from './public/login/login.component';
 import { NotFoundComponent } from './public/not-found/not-found.component';
 import { HeaderComponent } from './public/shared/header/header.component';
 import { FooterComponent } from './public/shared/footer/footer.component';
+import { GameService } from './public/services/game-service.service';
+import { PlayerService } from './public/services/player.service';
 
 
 @NgModule({
@@ -49,9 +52,13 @@ import { FooterComponent } from './public/shared/footer/footer.component';
     MatSelectModule,
     MatInputModule,
     MatCheckboxModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDividerModule,
   ],
-  providers: [],
+  providers: [
+    GameService,
+    PlayerService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,14 +1,18 @@
 .card {
     margin: 10px;
     padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    color: #ced1d0;
 }
 
 .game {
-    width: 268px;
-    background-color: rgb(194, 194, 194);
+    width: 300px;
+    background-color: #2d343c;
     border-radius: 10px;
     box-shadow: 1px 0px 10px #000;
     transition-duration: 200ms;
+    margin: 20px;
 }
 
 .game:hover {
@@ -51,5 +55,14 @@ font-weight: 300;
     width: 300px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    margin-top: -16px; 
+}
+
+mat-divider {
+    background-color: #818181;
+}
+
+mat-card-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7px;
 }
