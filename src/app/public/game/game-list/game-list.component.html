@@ -1,7 +1,8 @@
 <div *ngFor="let game of games">
-    {{game.name}}
-
-    
+    <div *ngIf="game.name && game.appid">
+        {{game.name}}
+        {{game.appid}}
+    </div>
 </div>
 <mat-divider></mat-divider>
 <p>game-list works!</p>

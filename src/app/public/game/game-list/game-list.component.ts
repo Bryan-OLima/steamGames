@@ -13,10 +13,6 @@ export class GameListComponent implements OnInit{
 
   games: GameModel[] = [];
 
-
-  games2: GameModel[]= [];
-  games$!: Observable<AppList[]>;
-  games3: GamesList[] = [];
   constructor(
     private _gameService: GameService,
     private _http: HttpClient,
@@ -34,7 +30,6 @@ export class GameListComponent implements OnInit{
       .subscribe({
         next: (result:any) => {
           this.games = result.applist.apps;
-          console.log(this.games);
         },
         error: () => {
           console.log('error All Games');
@@ -54,20 +49,4 @@ export class GameListComponent implements OnInit{
   // }
 
   // "applist":{"apps":[{"appid":1941401,"name":""}]}
-  
-  // test(){
-  //   this._gameService.getAll()
-  //   .subscribe({
-  //     next: (result:any) => {
-  //       this.games3 = result.applist;
-  //       console.log(this.games3, 'teste method');
-  //     },
-  //     error: () => {
-  //       console.log('error All Games');
-  //     }
-  //   });
-  // }
-  // listarEmpresas() {
-  //   this.empresas$ = this.empresaService.listarEmpresas();
-  // }
 }
