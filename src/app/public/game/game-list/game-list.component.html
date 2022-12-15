@@ -1,9 +1,22 @@
-<div *ngFor="let game of games">
-    <div *ngIf="game.name && game.appid">
-        {{game.name}}
-        {{game.appid}}
-    </div>
-</div>
-<mat-divider></mat-divider>
-<p>game-list works!</p>
-<app-game-card></app-game-card>
+<main>
+    .
+    <section>
+        <div class="content">
+            <div class="search">
+                    <mat-form-field appearance="outline" class="search-area">
+                        <mat-label>O que zerou hoje? :)</mat-label>
+                        <input matInput type="text">
+                    </mat-form-field>
+            </div>
+
+            <!-- <div *ngFor="let game of games" >
+                <div *ngIf="game.name && game.appid">
+
+                </div>
+            </div> -->
+            <app-game-card></app-game-card>
+            <app-game-card></app-game-card>
+            <app-game-card></app-game-card>
+        </div>
+    </section>
+</main>

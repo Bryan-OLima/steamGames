@@ -1,55 +1,54 @@
 <!-- PROFILE CARD -->
-<div class="card" *ngFor="let game of games">
-    <mat-card class="game">
-   
-        <section class="content">
-            <img src="{{'https://cdn.cloudflare.steamstatic.com/steam/apps/'+game.appid+'/library_600x900.jpg'}}" alt="" class="game-i">
-            <mat-card-content>
-                <mat-card-title>
-                    <h2>
-                        {{game.name}}
-                    </h2>
-                </mat-card-title>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    A assumenda voluptas iste ut incidunt consequuntur, temporibus accusamus, 
-                    modi quis eligendi aut ex optio dolores deleniti earum repellat obcaecati! Nostrum, id.
-                </p>
-                <mat-divider></mat-divider>
-            </mat-card-content>
-        </section>
-        <mat-card-actions align="start">
-            <button mat-flat-button color="primary" (click)="addGame(game)">Add to list</button>
-            <button mat-flat-button color="#000">
-                <a href="{{'https://store.steampowered.com/app/'+game.appid+'/'}}" target="_blank"><mat-icon aria-hidden="false" aria-label="share icon" fontIcon="shopping_cart" color="primary"></mat-icon></a>
-            </button>
-        </mat-card-actions>
-    </mat-card>
-</div>
+<main>
+    <div class="card" *ngFor="let game of games">
+        <mat-card class="game">
+            <section class="content">
+                <img src="{{'https://cdn.cloudflare.steamstatic.com/steam/apps/'+game.appid+'/library_600x900.jpg'}}" alt="" class="game-i">
+                <mat-card-content>
+                    <mat-card-title>
+                        <h2>
+                            {{game.name}}
+                        </h2>
+                    </mat-card-title>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        A assumenda voluptas iste ut incidunt consequuntur, temporibus accusamus, 
+                        modi quis eligendi aut ex optio dolores deleniti earum repellat obcaecati! Nostrum, id.
+                    </p>
+                    <mat-divider></mat-divider>
+                </mat-card-content>
+            </section>
+            <mat-card-actions align="start">
+                <button mat-flat-button color="primary" (click)="addGame(game)">Add to list</button>
+                <button mat-flat-button color="#000">
+                    <a href="{{'https://store.steampowered.com/app/'+game.appid+'/'}}" target="_blank"><mat-icon aria-hidden="false" aria-label="share icon" fontIcon="shopping_cart" color="primary"></mat-icon></a>
+                </button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
 
-<!-- SELECT CARD -->
-<!-- <div class="card" *ngFor="let game of games">
-    <mat-card class="game">
-        <section class="content">
-            <img src="{{'https://cdn.cloudflare.steamstatic.com/steam/apps/'+game.appid+'/header.jpg'}}" alt="" class="game-i-mini">
-            <mat-card-content>
-                <mat-card-title>
-                    <h2>
-                        {{game.name}}
-                    </h2>
-                </mat-card-title>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                </p>
-            </mat-card-content>
-        </section>
-        <input [(ngModel)]="appid" #ctrl="ngModel" required>
-        <p>Value: {{ appid }}</p>
-        <div>
-            <button mat-raised-button color="#000">share</button>
-            <button mat-flat-button color="primary" (click)="getSingleGame(appid)">Add to list</button>
-            <mat-icon aria-hidden="false" aria-label="share icon" fontIcon="share"></mat-icon>
-        </div>
+    <!-- SELECT CARD -->
+    <!-- <div class="card" *ngFor="let game of games">
+        <mat-card class="game-mini">
+            <section class="content">
+                <img src="{{'https://cdn.cloudflare.steamstatic.com/steam/apps/'+game.appid+'/header.jpg'}}" alt="" class="game-i-mini">
+                <mat-card-content>
+                    <mat-card-title>
+                        <h2>
+                            {{game.name}}
+                        </h2>
+                    </mat-card-title>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                </mat-card-content>
+            </section>
+            <mat-card-actions align="start">
+                <button mat-raised-button color="#000">share</button>
+                <button mat-flat-button color="primary" (click)="getSingleGame(appid)">Add to list</button>
+                <mat-icon aria-hidden="false" aria-label="share icon" fontIcon="share"></mat-icon>
+            </mat-card-actions>
 
-    </mat-card>
-</div> -->
+        </mat-card>
+    </div> -->
+</main>

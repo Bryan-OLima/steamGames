@@ -9,15 +9,33 @@ mat-toolbar {
 
 .header{
     background-color: #2d343c;
+
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    color: #9ca4a1;
+
+}
+
+.menu-items{
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+a{
+    all: unset;
 }
 
 .logo-name { 
     color: #9ca4a1;
     font-family: 'Anek Devanagari', sans-serif;
-    font-size: 1.1em;
+    font-size: 1.5em;
 }
 
 .content {
-    width: 100vw;
-    margin-bottom: 30px;
+    width: auto;
 }
